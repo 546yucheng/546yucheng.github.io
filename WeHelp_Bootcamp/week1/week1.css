@@ -75,12 +75,14 @@ body{
     /*margin-top: 20px;*/
     margin-bottom: 10px;
     flex:auto;
+    padding: 10px;
 }
 .list_t1{
     display:flex;
     justify-content:center;
     flex-basis: auto;
     flex-grow: 1;
+    flex-basis: calc 50% - 10px;
 }
 .list_t1_text{
     flex:auto;
@@ -118,7 +120,6 @@ body{
 
 .list_t2_text{
     flex:auto;
-    width: 180px;
     background-color:rgb(129, 178, 201);
     display: flex;
     justify-content: center;
@@ -128,7 +129,6 @@ body{
 .list_t2_image{
     display: block;
     flex:auto;
-    width: 180px;
 }
 
 
