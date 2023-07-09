@@ -7,6 +7,7 @@ body{
 .top_list{
     /*height:50px;*/
     display:flex;
+    flex-wrap: wrap;
 }
 
 .top_title_left{
@@ -53,37 +54,44 @@ body{
 }
 
 /* conect */
+.list{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.list_total{
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
 
 .list_leader_t1{
     display:flex;
     justify-content:center;
     align-items: center;
-    /*height:200px;
-    margin-bottom:20px;
-    margin-top:20px;*/
+    gap:20px;
+    flex-wrap: wrap;
+    /*margin-top: 20px;*/
+    margin-bottom: 10px;
+    flex:auto;
 }
 .list_t1{
     display:flex;
     justify-content:center;
-    /*align-content:space-around;*/
-    margin: 10px;
-    /*width:380px;
-    height:50px;
-    height:70px;*/
+    flex-basis: auto;
+    flex-grow: 1;
 }
 .list_t1_text{
     flex:auto;
-    width:300px;
-    height:50px;
-    /*margin: 10px;*/
     background-color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*vertical-align:right;*/
+   
 }
 .list_t1_image{
-    flex:auto;
+    flex:none;
     width: 80px;
     height: 50px;
     justify-content: center;
@@ -92,19 +100,23 @@ body{
 /* T2 */
 
 .list_leader_t2{
-    /*margin: 20px;*/
     display:flex;
-    justify-content: center;
+    /*justify-content: center;
     align-items: center;
+    /*flex:auto;*/
+    flex-wrap: wrap;
 }
 
 .list_t2{
     justify-content: center;
-    margin: 10px;
+    /*margin: 10px;*/
+    flex-basis: auto;
+    flex-grow: 1;
+    padding: 10px;
+    
 }
 
 .list_t2_text{
-    /* display: block; */
     flex:auto;
     width: 180px;
     background-color:rgb(129, 178, 201);
@@ -125,14 +137,14 @@ body{
 
 @media(max-width:1200px){
     /*螢幕寬度小於1200px,套用這個區塊的css*/
-    .list_leader_t1{       
+    /*.list_leader_t1{       
         margin-left:5%;
         margin-right:5%;
-    }
+    }*/
 
     .list_t1{
-        
-        width: 90%;
+        flex-grow: 1;
+        flex-basis: calc 50% - 10px;
     }
 
     .list_leader_t2{       
@@ -163,7 +175,8 @@ body{
 
     }
     .list_t1{
-        width: 90%;
+        flex-basis: calc 50% - 10px;
+        flex-grow: 1;
     }
 
     .list_t2{
