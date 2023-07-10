@@ -72,9 +72,8 @@ body{
     align-items: center;
     gap:20px;
     flex-wrap: wrap;
-    /*margin-top: 20px;*/
     margin-bottom: 10px;
-    flex:auto;
+    /*flex:auto;*/
     padding: 10px;
 }
 .list_t1{
@@ -137,14 +136,19 @@ body{
 
 @media(max-width:1200px){
     /*螢幕寬度小於1200px,套用這個區塊的css*/
-    /*.list_leader_t1{       
-        margin-left:5%;
-        margin-right:5%;
-    }*/
+    .list_total{
+        width: 90%;
+    }
+    .list_leader_t1{   
+       flex-wrap: wrap;
+       display: flex;
+    }
 
     .list_t1{
-        flex-grow: 1;
+        flex-wrap: wrap;
         flex-basis: calc 50% - 10px;
+        flex-grow: 1;
+        width: 45%;
     }
 
     .list_leader_t2{       
@@ -178,6 +182,7 @@ body{
     .list_t1{
         flex-basis: calc 50% - 10px;
         flex-grow: 1;
+        width: 90%;
     }
 
     .list_t2{
