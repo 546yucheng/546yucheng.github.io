@@ -88,7 +88,7 @@ body{
     flex:auto;
     background-color: antiquewhite;
     display: flex;
-    justify-content: center;
+    /*justify-content: center;*/
     align-items: center;
    
 }
@@ -149,10 +149,11 @@ body{
 
     .list_leader_t2{       
         flex-wrap: wrap;
+    
     }
 
     .list_t2{
-        width: 45%;
+        width: 20%;
 
     }
     .list_t2_text{
